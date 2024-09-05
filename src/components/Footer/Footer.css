@@ -1,0 +1,120 @@
+body {
+    background-color: #f0f0f0; /* A light color that complements the footer gradient */
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    background: linear-gradient(180deg, rgba(236, 122, 9, 0.1) 26.71%, rgba(229, 229, 9, 0.1) 200.36%);
+    padding: 1pt;
+    border-radius: 59%;
+}
+
+
+
+.footer {
+    padding-top: -40px; /* Positive padding to create space at the top */
+    padding-bottom: 8px; /* Add padding here to create space at the bottom */
+    background-color: yellow;
+    width: 105%; 
+    border-radius: 40px;
+    background: linear-gradient(180deg, #ec7a09 26.71%, #e5e509 100.36%);
+}
+
+.de {
+    margin-bottom: -10px;
+    font-family:'Arial';
+    padding-top: 4px;
+}
+
+/* .wave-img {
+    width: 120%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-right:120px;
+    margin-top: 140px;
+    
+
+} */
+
+.f-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: rgb(244, 247, 252);
+    text-align: center;
+    margin-top: 200px;
+}
+
+.email-button {
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    position: relative;
+    margin-top: 40px;
+}
+
+.email-button:hover {
+    background-color: rgba(220, 208, 208, 0.9);
+    transform: translateY(-5px);
+}
+
+.email-button:active {
+    transform: translateY(2px);
+}
+
+.f-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 90px;
+    position: absolute;
+}
+
+.icon {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+}
+
+.icon:active {
+    transform: translateY(2px);
+}
+
+.designed-by {
+    margin-top: 40px;
+    margin-bottom:10px;
+    color:black;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 700px) {
+    .footer {
+        padding-top: -300px; 
+        padding-bottom:-300px;
+    }
+
+    .f-icons {
+        margin-top: -px;
+        padding-bottom: 40px;
+    }
+
+    .email-button {
+        bottom: 40px;
+    }
+}

@@ -1,0 +1,41 @@
+/* PdfViewer.css */
+.pdf-viewer-container {
+  height: 600vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.pdf-pages-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pdf-page-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .pdf-pages-container {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .pdf-page-wrapper {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .pdf-page-wrapper > * {
+    width: 100%;
+    height: auto;
+  }
+}
